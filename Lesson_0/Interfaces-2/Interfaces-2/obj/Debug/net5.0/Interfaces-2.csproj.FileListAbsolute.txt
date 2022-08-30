@@ -1,0 +1,12 @@
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interfaces-2\Interfaces-2\bin\Debug\net5.0\Interfaces-2.deps.json
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interfaces-2\Interfaces-2\bin\Debug\net5.0\Interfaces-2.dll
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interfaces-2\Interfaces-2\bin\Debug\net5.0\Interfaces-2.pdb
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interfaces-2\Interfaces-2\obj\Debug\net5.0\Interfaces-2.csproj.AssemblyReference.cache
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interfaces-2\Interfaces-2\obj\Debug\net5.0\Interfaces-2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interfaces-2\Interfaces-2\obj\Debug\net5.0\Interfaces-2.AssemblyInfoInputs.cache
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interfaces-2\Interfaces-2\obj\Debug\net5.0\Interfaces-2.AssemblyInfo.cs
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interfaces-2\Interfaces-2\obj\Debug\net5.0\Interfaces-2.csproj.CoreCompileInputs.cache
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interfaces-2\Interfaces-2\obj\Debug\net5.0\Interfaces-2.dll
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interfaces-2\Interfaces-2\obj\Debug\net5.0\refint\Interfaces-2.dll
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interfaces-2\Interfaces-2\obj\Debug\net5.0\Interfaces-2.pdb
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interfaces-2\Interfaces-2\obj\Debug\net5.0\ref\Interfaces-2.dll

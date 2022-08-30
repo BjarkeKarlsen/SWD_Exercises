@@ -1,0 +1,12 @@
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interface-1\DoStuff\bin\Debug\net5.0\DoStuff.deps.json
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interface-1\DoStuff\bin\Debug\net5.0\DoStuff.dll
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interface-1\DoStuff\bin\Debug\net5.0\DoStuff.pdb
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interface-1\DoStuff\obj\Debug\net5.0\DoStuff.csproj.AssemblyReference.cache
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interface-1\DoStuff\obj\Debug\net5.0\DoStuff.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interface-1\DoStuff\obj\Debug\net5.0\DoStuff.AssemblyInfoInputs.cache
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interface-1\DoStuff\obj\Debug\net5.0\DoStuff.AssemblyInfo.cs
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interface-1\DoStuff\obj\Debug\net5.0\DoStuff.csproj.CoreCompileInputs.cache
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interface-1\DoStuff\obj\Debug\net5.0\DoStuff.dll
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interface-1\DoStuff\obj\Debug\net5.0\refint\DoStuff.dll
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interface-1\DoStuff\obj\Debug\net5.0\DoStuff.pdb
+C:\Users\Bjark\source\repos\SWD\Lesson_0\Interface-1\DoStuff\obj\Debug\net5.0\ref\DoStuff.dll
