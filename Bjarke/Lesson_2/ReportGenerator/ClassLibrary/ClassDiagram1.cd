@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ReportGenerator.Employee">
+    <Position X="7" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReportGenerator.ReportGenerator">
+    <Position X="2.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAIAQAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>ReportGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReportGenerator.ReportGeneratorClient">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>ReportGeneratorClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReportGenerator.EmployeeDB">
+    <Position X="7" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEQAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>EmployeeDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ReportGenerator.ReportOutputFormatType">
+    <Position X="2.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ReportGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -22,7 +22,6 @@ namespace ReportGenerator
             _employeeDb = employeeDb;
         }
 
-
         public void CompileReport()
         {
             var employees = new List<Employee>();

@@ -1,0 +1,15 @@
+C:\Users\Bjark\source\repos\SoftwareDesign\Bjarke\Lesson_2\ReportGenerator\ReportGenerator\bin\Debug\net6.0\ReportGenerator.exe
+C:\Users\Bjark\source\repos\SoftwareDesign\Bjarke\Lesson_2\ReportGenerator\ReportGenerator\bin\Debug\net6.0\ReportGenerator.deps.json
+C:\Users\Bjark\source\repos\SoftwareDesign\Bjarke\Lesson_2\ReportGenerator\ReportGenerator\bin\Debug\net6.0\ReportGenerator.runtimeconfig.json
+C:\Users\Bjark\source\repos\SoftwareDesign\Bjarke\Lesson_2\ReportGenerator\ReportGenerator\bin\Debug\net6.0\ReportGenerator.dll
+C:\Users\Bjark\source\repos\SoftwareDesign\Bjarke\Lesson_2\ReportGenerator\ReportGenerator\bin\Debug\net6.0\ReportGenerator.pdb
+C:\Users\Bjark\source\repos\SoftwareDesign\Bjarke\Lesson_2\ReportGenerator\ReportGenerator\obj\Debug\net6.0\ReportGenerator.csproj.AssemblyReference.cache
+C:\Users\Bjark\source\repos\SoftwareDesign\Bjarke\Lesson_2\ReportGenerator\ReportGenerator\obj\Debug\net6.0\ReportGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bjark\source\repos\SoftwareDesign\Bjarke\Lesson_2\ReportGenerator\ReportGenerator\obj\Debug\net6.0\ReportGenerator.AssemblyInfoInputs.cache
+C:\Users\Bjark\source\repos\SoftwareDesign\Bjarke\Lesson_2\ReportGenerator\ReportGenerator\obj\Debug\net6.0\ReportGenerator.AssemblyInfo.cs
+C:\Users\Bjark\source\repos\SoftwareDesign\Bjarke\Lesson_2\ReportGenerator\ReportGenerator\obj\Debug\net6.0\ReportGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Bjark\source\repos\SoftwareDesign\Bjarke\Lesson_2\ReportGenerator\ReportGenerator\obj\Debug\net6.0\ReportGenerator.dll
+C:\Users\Bjark\source\repos\SoftwareDesign\Bjarke\Lesson_2\ReportGenerator\ReportGenerator\obj\Debug\net6.0\refint\ReportGenerator.dll
+C:\Users\Bjark\source\repos\SoftwareDesign\Bjarke\Lesson_2\ReportGenerator\ReportGenerator\obj\Debug\net6.0\ReportGenerator.pdb
+C:\Users\Bjark\source\repos\SoftwareDesign\Bjarke\Lesson_2\ReportGenerator\ReportGenerator\obj\Debug\net6.0\ReportGenerator.genruntimeconfig.cache
+C:\Users\Bjark\source\repos\SoftwareDesign\Bjarke\Lesson_2\ReportGenerator\ReportGenerator\obj\Debug\net6.0\ref\ReportGenerator.dll
