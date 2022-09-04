@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bjark\\source\\repos\\SWD\\Lesson_1\\CardGame\\CardGame\\CardGame.csproj": {}
+    "C:\\Users\\Bjarke\\source\\repos\\Semester4\\SWD_Exercises\\Bjarke\\Lesson_1\\CardGame\\CardGame\\CardGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bjark\\source\\repos\\SWD\\Lesson_1\\CardGame\\CardGame\\CardGame.csproj": {
+    "C:\\Users\\Bjarke\\source\\repos\\Semester4\\SWD_Exercises\\Bjarke\\Lesson_1\\CardGame\\CardGame\\CardGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bjark\\source\\repos\\SWD\\Lesson_1\\CardGame\\CardGame\\CardGame.csproj",
+        "projectUniqueName": "C:\\Users\\Bjarke\\source\\repos\\Semester4\\SWD_Exercises\\Bjarke\\Lesson_1\\CardGame\\CardGame\\CardGame.csproj",
         "projectName": "CardGame",
-        "projectPath": "C:\\Users\\Bjark\\source\\repos\\SWD\\Lesson_1\\CardGame\\CardGame\\CardGame.csproj",
-        "packagesPath": "C:\\Users\\Bjark\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bjark\\source\\repos\\SWD\\Lesson_1\\CardGame\\CardGame\\obj\\",
+        "projectPath": "C:\\Users\\Bjarke\\source\\repos\\Semester4\\SWD_Exercises\\Bjarke\\Lesson_1\\CardGame\\CardGame\\CardGame.csproj",
+        "packagesPath": "C:\\Users\\Bjarke\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bjarke\\source\\repos\\Semester4\\SWD_Exercises\\Bjarke\\Lesson_1\\CardGame\\CardGame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bjark\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bjarke\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

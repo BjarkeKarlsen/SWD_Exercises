@@ -9,7 +9,7 @@ namespace CardGame
 {
     public class Player
     {
-        private List<Card> PlayerHand = new List<Card>();
+        protected readonly List<Card> _playerHand = new List<Card>();
         public string Name { get; protected set; }
 
         public Player(string name)
@@ -18,29 +18,35 @@ namespace CardGame
         }
 
 
-        public void ShowHand()
+        public string ShowHand()
         {
             // Must return ToString from Card foreach Card in hand
-            foreach (Card card in PlayerHand)
+            StringBuilder builder = new StringBuilder();
+            builder.Append($"{Name} : (total: {TotalHandValue()} ) ");
+            foreach (var card in _playerHand)
             {
-                PlayerHand.ToString();
+                builder.Append(card.ToString() + "; ");
             }
+
+            builder.Append("\r\n");
+            return builder.ToString();
+            
         }
 
-        public int ShowTotalValue()
+        public int TotalHandValue()
         {
             //Gets all value from PlayerHand and returns it
             int value = 0;
-            foreach (Card card in PlayerHand)
+            foreach (var card in _playerHand)
             {
                 value += card.GetValue();
             }
             return value;
         }
 
-        public void AcceptCard(Card newCard)
+        public virtual void AcceptCard(Cards.Card newCard)
         {
-            PlayerHand.Add(newCard);
+            _playerHand.Add(newCard);
         }
 
 

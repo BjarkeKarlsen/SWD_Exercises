@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CardGame.GameType
 {
-    internal interface IGame
+    public interface IGameType
     {
+        void AnnounceWinner(List<Player> players);
     }
 }
