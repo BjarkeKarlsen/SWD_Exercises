@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace ReportGenerator
+namespace ClassLibrary
 {
     public class EmployeeDB
     {

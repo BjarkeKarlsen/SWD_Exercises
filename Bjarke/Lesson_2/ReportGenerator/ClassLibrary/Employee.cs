@@ -1,4 +1,4 @@
-namespace ReportGenerator
+namespace ClassLibrary
 {
     public class Employee
     {
