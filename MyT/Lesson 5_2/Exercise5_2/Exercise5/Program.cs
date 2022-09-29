@@ -7,5 +7,5 @@ array1.print();
 
 int[] array2 = array1.GetArray();
 
-SuperSorter sortedArray = new SuperSorter(array2);
+InsertionSort sortedArray = new InsertionSort(array2);
 sortedArray.print();

@@ -1,18 +1,17 @@
 ﻿using System;
 namespace Exercise5
 {
-    public class SuperSorter
+    abstract class SuperSorter
     {
         private int[] data_;
         public SuperSorter(int[] data)
         {
  
             data_ = data;
-            IntArrayInsertionSort(data_);
- 
+        
         }
 
-        public static void exchange(int[] data, int m, int n)
+        public void exchange(int[] data, int m, int n)
         {
             int temporary;
 
@@ -21,15 +20,16 @@ namespace Exercise5
             data[n] = temporary;
         }
 
-        
+        protected abstract void algorithm();
+
         public void print()
         {
             foreach (var item in data_)
             {
                 Console.WriteLine(item);
-
+           
             }
-            Console.WriteLine("\n");
+            Console.WriteLine("hihi\n");
         }
 
     }

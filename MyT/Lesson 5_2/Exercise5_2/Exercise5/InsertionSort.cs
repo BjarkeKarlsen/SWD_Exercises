@@ -1,22 +1,27 @@
 ﻿using System;
 namespace Exercise5
 {
-    public class InsertionSort : extends SuperSorter
+    class InsertionSort: SuperSorter
     {
-        public InsertionSort()
+        
+        private readonly int[] _data;
+
+        public InsertionSort(int[] data) : base(data)
         {
+            _data = data;
+            algorithm();
         }
 
-        public static void IntArrayInsertionSort(int[] data)
+        protected override void algorithm()
         {
             int i, j;
-            int N = data.Length;
+            int N = _data.Length;
 
             for (j = 1; j < N; j++)
             {
-                for (i = j; i > 0 && data[i] < data[i - 1]; i--)
+                for (i = j; i > 0 && _data[i] < _data[i - 1]; i--)
                 {
-                    exchange(data, i, i - 1);
+                    exchange(_data, i, i - 1);
                 }
             }
         }
