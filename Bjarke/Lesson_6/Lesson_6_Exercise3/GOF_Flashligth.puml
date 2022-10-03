@@ -1,0 +1,23 @@
+@startuml
+participant "Flashlight" as flash
+participant "Off" as off
+participant "On" as on
+
+activate flash 
+flash -> off : HandlePowerOff(this)
+activate off 
+off -> flash : LightOn()
+off -> flash : SetState(new On(Flashlight))
+deactivate off
+flash -> on : HandlePowerOn(this)
+activate on
+on -> flash : LightOn()
+on -> flash : SetState(new Off(Flashlight))
+flash -> off : HandlePowerOff(this)
+deactivate on
+
+activate off 
+off -> flash : LightOn()
+off -> flash : SetState(new On(Flashlight))
+deactivate off
+@enduml
