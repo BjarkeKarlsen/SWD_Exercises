@@ -8,8 +8,6 @@ namespace Lesson_6_Exercise2.Flashlight
 {
     public class Off : FlashlightState
     {
-        //private readonly On on = new On();
-
         public Off(Flashlight context)
         {
             context.SetState(this);
