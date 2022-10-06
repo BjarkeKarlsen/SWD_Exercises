@@ -23,24 +23,22 @@ namespace Lesson_6_Exercise5_2.Flashlight
 
     public class On : FlashlightState
     {
-        public On(Flashlight context) {
+        public On(Flashlight context)
+        {
             context.SetState(new Solid(context));
         }
 
-        public override void HandlePowerOff(Flashlight context) {
+        public override void HandlePowerOff(Flashlight context)
+        {
             context.LightOff();
             context.SetState(new Off(context));
         }
 
-        public override void HandleMode(Flashlight context) {
-            if (context.GetState() is Solid) {
-                context.ModeFlashing();
-                context.SetState(new Flashing(context));
-            }
-            else {
-                context.ModeSolid();
-                context.SetState(new Solid(context));
-            }
+        public override void HandleMode(Flashlight context)
+        {
+            context.ModeSolid();
+            context.SetState(new Solid(context));
+
         }
 
     }
