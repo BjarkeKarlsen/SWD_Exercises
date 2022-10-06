@@ -1,8 +1,21 @@
-﻿using Lesson_6_Exercise2.Flashlight;
+﻿using Lesson_6_Exercise5_2.Flashlight;
+
 
 var flashlight = new Flashlight();
 
-flashlight.PowerOff();
 flashlight.PowerOn();
+flashlight.Mode();
+flashlight.Mode();
+flashlight.Mode();
+flashlight.Mode();
+flashlight.Mode();
 flashlight.PowerOff();
 
+Console.WriteLine("\n");
+
+flashlight.PowerOn();
+flashlight.Mode();
+flashlight.Mode();
+flashlight.Mode();
+flashlight.Mode();
+flashlight.PowerOff();

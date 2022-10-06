@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lesson_6_Exercise5_2.Flashlight
+namespace Lesson_6_Exercise2.Flashlight
 {
     public class Flashlight
     {
         private FlashlightState _state;
-        
         public Flashlight()
         {
             _state = new Off(this);
@@ -33,7 +32,6 @@ namespace Lesson_6_Exercise5_2.Flashlight
 
         public void Mode()
         {
-            
             _state.HandleMode(this);
         }
 
@@ -52,7 +50,7 @@ namespace Lesson_6_Exercise5_2.Flashlight
             Console.WriteLine("Light is solid");
         }
 
-        public void ModeFlashing()
+        public void ModeFlash()
         {
             Console.WriteLine("Light is flasing");
         }
@@ -61,10 +59,6 @@ namespace Lesson_6_Exercise5_2.Flashlight
         public void SetState(FlashlightState state)
         {
             _state = state;
-        }
-
-        public FlashlightState GetState() {
-            return _state;
         }
     }
 }
