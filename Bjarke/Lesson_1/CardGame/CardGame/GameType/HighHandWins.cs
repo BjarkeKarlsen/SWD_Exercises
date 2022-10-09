@@ -13,14 +13,15 @@ namespace CardGame.GameType
             Player winner = players[0];
             foreach (var player in players)
             {
-                if (player.TotalHandValue() < winner.TotalHandValue())
+                if (player.TotalHandValue() > winner.TotalHandValue())
                 {
                     winner = player;
                 }
 
-                System.Console.WriteLine($"The winner is: {winner.Name}");
+                
             }
-            
+            System.Console.WriteLine($"The winner is: {winner.Name}");
+
         }
     }
 }
