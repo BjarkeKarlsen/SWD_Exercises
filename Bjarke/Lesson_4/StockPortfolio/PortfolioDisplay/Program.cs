@@ -39,11 +39,6 @@ namespace ObserverPush
                     total = 0;
                 }
             }
-            //subject.SetData(stockGoogle.Update());
-            //subject.SetData(stockGoogle.Update());
-            //subject.SetData(stockGoogle.Update());
-            //subject.SetData(stockGoogle.Update());
-            //subject.SetData(stockGoogle.Update());
 
             // If we give stock a life it self then it must update
             // So it calls setData on the subject it self when it updates

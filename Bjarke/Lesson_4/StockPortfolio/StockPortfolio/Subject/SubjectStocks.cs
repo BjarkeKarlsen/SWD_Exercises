@@ -1,15 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using StockPortfolio.Observer;
-using System.Xml.Linq;
-using StockPortfolio.Interface;
+﻿using StockPortfolio.Interface;
 using StockPortfolio.DataTypes;
-using StockPortfolio.Subject;
 
 namespace StockPortfolio.Subject
 {
@@ -26,18 +16,19 @@ namespace StockPortfolio.Subject
 
         public void Attach(IObserverImp<Stock> obs)
         {
-            if (!_observers.Contains(obs))
-            {
-                _observers.Add(obs);
-            }
+            if (_observers.Contains(obs))
+                return;
+
+            _observers.Add(obs);
+
 
         }
         public void Detach(IObserverImp<Stock> obs)
         {
             if (!_observers.Contains(obs))
-            {
-                _observers.Remove(obs);
-            }
+                return;
+
+            _observers.Remove(obs);
         }
         public void Notify()
         {
