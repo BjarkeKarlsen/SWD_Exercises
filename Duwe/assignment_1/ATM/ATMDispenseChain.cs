@@ -16,7 +16,12 @@ namespace ATM
             d50.SetNextChain(d20);
             d20.SetNextChain(d10);
         }
-               
+
+        public void Dispense(Currency cur)
+        {
+            d100.Dispense(cur);
+        }
+
     }
 
 }

@@ -5,7 +5,7 @@ namespace ATM
         private int _amount; 
         public Currency(int amount)
         {
-            amount = amount;
+            this._amount = amount;
         }
 
         public int GetAmount()

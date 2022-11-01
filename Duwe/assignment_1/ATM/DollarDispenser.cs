@@ -2,7 +2,7 @@ namespace ATM
 {
     public class DollarDispenser : DispenseChain
     {
-        private DispenseChain _nextChain;
+        private DispenseChain _nextChain = null;
 
         private int _denomination;
 
@@ -21,7 +21,7 @@ namespace ATM
             {
                 int num = cur.GetAmount() / _denomination;
                 int remainder = cur.GetAmount() % _denomination;
-                Console.WriteLine("Dispensing " + num + " 100$ note");
+                Console.WriteLine("Dispensing " + num + " " + _denomination +"$ note");
                 if (remainder != 0) _nextChain.Dispense(new Currency(remainder));
             }
             else
