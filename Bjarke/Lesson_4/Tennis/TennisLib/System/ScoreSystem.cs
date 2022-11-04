@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TennisLib.ScoreSystem.ScoreSystem;
 using TennisLib.TennisGame;
 
 namespace TennisLib.ScoreSystem
@@ -31,12 +30,12 @@ namespace TennisLib.ScoreSystem
 
         public int CalculateScore(ITennisGame game)
         {
-            throw new NotImplementedException();
+            game.
         }
 
         public string GetScore(ITennisGame game)
         {
-            return ("Player 1 VS Player 2: \n{_player1.Score} - {_player2.Score} ");
+            return ("Player 1 VS Player 2: \n{game._player1.Score} - {_player2.Score} ");
         }
     }
 
