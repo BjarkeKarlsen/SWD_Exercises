@@ -28,7 +28,6 @@ namespace Chain_Of_Responsibility
 
             if (amount < _divider)
             {
-                // Don'st work if amount is zero and there is no following chain
                 _chain.Dispense(currency);
                 return;
             }
