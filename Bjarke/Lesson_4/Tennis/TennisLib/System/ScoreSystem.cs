@@ -61,7 +61,7 @@ public enum ScoreTypeEnum
     Forty,
     Deuce
 }
-}
+
 
 
 //public string GetScore()
