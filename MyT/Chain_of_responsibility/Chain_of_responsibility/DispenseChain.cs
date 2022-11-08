@@ -1,9 +1,9 @@
 ﻿using System;
 namespace Chain_of_responsibility
 {
-    public interface IDispenseChain
+    public interface DispenseChain
     {
-        void SetNextChain(IDispenseChain nextChain);
+        void SetNextChain(DispenseChain nextChain);
         void Dispense(Currency cur);
     }
 }

@@ -1,0 +1,50 @@
+@startuml
+
+Class Bill1000Dispenser{
+    DispenseChain _nextChain
+}
+Class Bill500Dispenser
+{
+    DispenseChain _nextChain
+}
+Class Bill200Dispenser
+{
+    DispenseChain _nextChain
+}
+Class Bill100Dispenser
+{
+    DispenseChain _nextChain
+}
+Class Bill50Dispenser
+{
+    DispenseChain _nextChain
+}
+
+interface DispenseChain
+{
+ SetNextChain(DispenseChain) : void
+ Dispense(Currency) : void
+
+}
+class ATM 
+{
+    Dispense(Currency): void
+}
+class Currency
+{
+    _amount : int
+    Currency(int) 
+    GetAmount() : int
+}
+
+Bill1000Dispenser .u.|> DispenseChain
+Bill500Dispenser .u.|> DispenseChain
+Bill200Dispenser .u.|> DispenseChain
+Bill100Dispenser .u.|> DispenseChain
+Bill50Dispenser .u.|> DispenseChain
+
+Currency <-- DispenseChain
+
+ATM -r-> DispenseChain
+
+@enduml

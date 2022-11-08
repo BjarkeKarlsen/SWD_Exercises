@@ -8,25 +8,24 @@ using Chain_of_responsibility;
 
 namespace Chain_of_responsibility
 {
-    public class DollarDispenser : IDispenseChain 
+    public class Bill200Dispenser : DispenseChain 
     {
-        private IDispenseChain _nextChain;
-        private int _divider;
+        private DispenseChain _nextChain;
 
-        public DollarDispenser(int divider)
+
+        public Bill200Dispenser ()
         {
-            _divider = divider;
         } 
 
 
         public void Dispense(Currency cur)
         {
             
-                if (cur.GetAmount() >= _divider)
+                if (cur.GetAmount() >= 200)
                 {
-                    int num = cur.GetAmount() / _divider;
-                    int remainder = cur.GetAmount() % _divider;
-                    Console.WriteLine("Dispensing " + num + " " + _divider + "DKK note");
+                    int num = cur.GetAmount() / 200;
+                    int remainder = cur.GetAmount() % 200;
+                    Console.WriteLine("Dispensing " + num + " " + 200 + "DKK note");
                     if (remainder != 0) this._nextChain.Dispense(new Currency(remainder));
                 }
                 else
@@ -37,7 +36,7 @@ namespace Chain_of_responsibility
             
         }
 
-        public void SetNextChain(IDispenseChain nextChain)
+        public void SetNextChain(DispenseChain nextChain)
         {
             this._nextChain = nextChain;
         }
