@@ -17,6 +17,7 @@ namespace Chain_Of_Responsibility
         {
             _divider = divider;
         }
+
         public void setNext(DispenseChain next)
         {
             this._chain = next;
