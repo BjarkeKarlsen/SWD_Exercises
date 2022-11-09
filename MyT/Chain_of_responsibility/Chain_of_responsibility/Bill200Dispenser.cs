@@ -30,7 +30,7 @@ namespace Chain_of_responsibility
                 }
                 else
                 {
-                    this._nextChain.Dispense(cur);
+                    _nextChain.Dispense(cur);
                 }
             
             
@@ -38,7 +38,7 @@ namespace Chain_of_responsibility
 
         public void SetNextChain(DispenseChain nextChain)
         {
-            this._nextChain = nextChain;
+            _nextChain = nextChain;
         }
     }
 }

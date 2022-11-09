@@ -26,11 +26,11 @@ namespace Chain_of_responsibility
                     int num = cur.GetAmount() / 500;
                     int remainder = cur.GetAmount() % 500;
                     Console.WriteLine("Dispensing " + num + " " + 500 + "DKK note");
-                    if (remainder != 0) this._nextChain.Dispense(new Currency(remainder));
+                    if (remainder != 0) _nextChain.Dispense(new Currency(remainder));
                 }
                 else
                 {
-                    this._nextChain.Dispense(cur);
+                    _nextChain.Dispense(cur);
                 }
             
             

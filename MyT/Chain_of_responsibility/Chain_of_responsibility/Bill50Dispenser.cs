@@ -21,12 +21,13 @@ namespace Chain_of_responsibility
         public void Dispense(Currency cur)
         {
             
+            
                 if (cur.GetAmount() >= 50)
                 {
                     int num = cur.GetAmount() / 50;
                     int remainder = cur.GetAmount() % 50;
                     Console.WriteLine("Dispensing " + num + " " + 50 + "DKK note");
-                    if (remainder != 0) this._nextChain.Dispense(new Currency(remainder));
+                    if (remainder != 0) _nextChain.Dispense(new Currency(remainder));
                 }
                 else
                 {
@@ -35,10 +36,9 @@ namespace Chain_of_responsibility
             
             
         }
-
         public void SetNextChain(DispenseChain nextChain)
         {
-            this._nextChain = nextChain;
+            _nextChain = nextChain;
         }
     }
 }

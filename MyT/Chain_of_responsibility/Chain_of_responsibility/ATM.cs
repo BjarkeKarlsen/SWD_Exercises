@@ -18,8 +18,8 @@ namespace Chain_of_responsibility
             c1 = new Bill1000Dispenser();
             c2 = new Bill500Dispenser();
             c3 = new Bill200Dispenser();
-            c4 = new Bill1000Dispenser();
-            c5 = new Bill500Dispenser();
+            c4 = new Bill100Dispenser();
+            c5 = new Bill50Dispenser();
 
 
             // set the chain of responsibility
