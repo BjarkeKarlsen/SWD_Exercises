@@ -17,6 +17,12 @@ namespace ATM
 
         public void Dispense(Currency cur)
         {
+            if (cur.GetAmount() % 10 != 0 )
+            {
+                Console.WriteLine("Amount must be divisible by 10");
+                return;
+            }
+
             if (cur.GetAmount() >= _denomination)
             {
                 int num = cur.GetAmount() / _denomination;
