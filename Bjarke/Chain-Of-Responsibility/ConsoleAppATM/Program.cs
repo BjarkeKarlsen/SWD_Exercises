@@ -2,6 +2,25 @@
 
 var atm = new ATM();
 
-atm.Dispense(new Currency(340));
+int value = 340;
+Console.WriteLine($"Dispensing {value}");
+atm.Dispense(new Currency(value));
+value = 5320;
+Console.WriteLine($"Dispensing {value}");
+atm.Dispense(new Currency(value));
 
-atm.Dispense(new Currency(5320));
+value = 55;
+Console.WriteLine($"Dispensing {value}");
+atm.Dispense(new Currency(value));
+
+value = 20;
+Console.WriteLine($"Dispensing {value}");
+atm.Dispense(new Currency(value));
+
+value = 50;
+Console.WriteLine($"Dispensing {value}");
+atm.Dispense(new Currency(value));
+
+value = 100;
+Console.WriteLine($"Dispensing {value}");
+atm.Dispense(new Currency(value));

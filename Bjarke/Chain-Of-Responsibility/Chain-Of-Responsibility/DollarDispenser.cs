@@ -8,36 +8,38 @@ using System.Threading.Tasks;
 
 namespace Chain_Of_Responsibility
 {
-    public class DollarDispenser : DispenseChain
+    public class DollarDispenser : BaseDispenser
     {
-        private DispenseChain _chain;
         private int _divider;
 
         public DollarDispenser(int divider)
         {
             _divider = divider;
         }
+<<<<<<< Updated upstream
 
         public void setNext(DispenseChain next)
         {
             this._chain = next;
         }
+=======
+>>>>>>> Stashed changes
 
-        public void Dispense(Currency currency)
+        public override void Dispense(Currency currency)
         {
             var amount = currency.GetAmount();
 
-            if (amount < _divider)
+            if (amount >= _divider)
             {
-                _chain.Dispense(currency);
-                return;
+                int num = (int)(amount / _divider);
+                double remainder = amount % _divider;
+                Console.WriteLine($"Dispensing {num} {_divider}$ note");
+                base.Dispense(new Currency(remainder));
             }
-
-            int num = (int)(amount / _divider);
-            double remainder = amount % _divider;
-            Console.WriteLine($"Dispensing {num} {_divider}$ note");
-            if (remainder != 0) _chain.Dispense(new Currency(remainder));
-
+            else
+            {
+                base.Dispense(currency);
+            }
         }
 
     }

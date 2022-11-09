@@ -23,16 +23,14 @@ namespace Chain_Of_Responsibility
             _chain3 = new DollarDispenser(200);
             _chain4 = new DollarDispenser(100);
             _chain5 = new DollarDispenser(50);
-            _chain6 = new DollarDispenser(20);
-            _chain7 = new DollarDispenser(10);
+
 
             // Set chain of respensibility
             _chain1.setNext(_chain2);
             _chain2.setNext(_chain3);
             _chain3.setNext(_chain4);
             _chain4.setNext(_chain5);
-            _chain5.setNext(_chain6);
-            _chain6.setNext(_chain7);
+
         }
 
         public void Dispense(Currency currency)
