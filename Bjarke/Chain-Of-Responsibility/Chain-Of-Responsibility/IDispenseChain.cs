@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Chain_Of_Responsibility
 {
-    public interface DispenseChain
+    public interface IDispenseChain
     {
-        void setNext(DispenseChain next);
+        void setNext(IDispenseChain next);
         void Dispense(Currency currency);
     }
 }

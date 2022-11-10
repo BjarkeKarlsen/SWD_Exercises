@@ -8,13 +8,13 @@ namespace Chain_Of_Responsibility
 {
     public class ATM
     {
-        private DispenseChain _chain1;
-        private DispenseChain _chain2;
-        private DispenseChain _chain3;
-        private DispenseChain _chain4;
-        private DispenseChain _chain5;
-        private DispenseChain _chain6;
-        private DispenseChain _chain7;
+        private IDispenseChain _chain1;
+        private IDispenseChain _chain2;
+        private IDispenseChain _chain3;
+        private IDispenseChain _chain4;
+        private IDispenseChain _chain5;
+        private IDispenseChain _chain6;
+        private IDispenseChain _chain7;
 
         public ATM()
         {

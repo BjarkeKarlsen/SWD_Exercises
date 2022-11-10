@@ -16,14 +16,6 @@ namespace Chain_Of_Responsibility
         {
             _divider = divider;
         }
-<<<<<<< Updated upstream
-
-        public void setNext(DispenseChain next)
-        {
-            this._chain = next;
-        }
-=======
->>>>>>> Stashed changes
 
         public override void Dispense(Currency currency)
         {

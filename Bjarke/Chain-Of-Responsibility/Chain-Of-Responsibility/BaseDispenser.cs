@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Chain_Of_Responsibility
 {
-    public class BaseDispenser : DispenseChain
+    public class BaseDispenser : IDispenseChain
     {
 
-        protected DispenseChain? _chain;
+        protected IDispenseChain? _chain;
 
 
-        public void setNext(DispenseChain next)
+        public void setNext(IDispenseChain next)
         {
             this._chain = next;
         }

@@ -1,28 +1,28 @@
 @startuml
 
 Class Bill1000Dispenser{
-    DispenseChain _nextChain
+    IDispenseChain _nextChain
 }
 Class Bill500Dispenser
 {
-    DispenseChain _nextChain
+    IDispenseChain _nextChain
 }
 Class Bill200Dispenser
 {
-    DispenseChain _nextChain
+    IDispenseChain _nextChain
 }
 Class Bill100Dispenser
 {
-    DispenseChain _nextChain
+    IDispenseChain _nextChain
 }
 Class Bill50Dispenser
 {
-    DispenseChain _nextChain
+    IDispenseChain _nextChain
 }
 
-interface DispenseChain
+interface IDispenseChain
 {
- SetNextChain(DispenseChain) : void
+ SetNextChain(IDispenseChain) : void
  Dispense(Currency) : void
 
 }
@@ -37,14 +37,21 @@ class Currency
     GetAmount() : int
 }
 
-Bill1000Dispenser .u.|> DispenseChain
-Bill500Dispenser .u.|> DispenseChain
-Bill200Dispenser .u.|> DispenseChain
-Bill100Dispenser .u.|> DispenseChain
-Bill50Dispenser .u.|> DispenseChain
+Bill1000Dispenser .u.|> IDispenseChain
+Bill500Dispenser .u.|> IDispenseChain
+Bill200Dispenser .u.|> IDispenseChain
+Bill100Dispenser .u.|> IDispenseChain
+Bill50Dispenser .u.|> IDispenseChain
 
-Currency <-- DispenseChain
+Bill1000Dispenser *-u-> IDispenseChain
+Bill500Dispenser *-u-> IDispenseChain
+Bill200Dispenser *-u-> IDispenseChain
+Bill100Dispenser *-u-> IDispenseChain
+Bill50Dispenser *-u-> IDispenseChain
 
-ATM -r-> DispenseChain
+
+Currency <-- IDispenseChain
+
+ATM -r-> IDispenseChain
 
 @enduml
