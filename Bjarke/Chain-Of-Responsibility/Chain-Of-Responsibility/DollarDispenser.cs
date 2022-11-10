@@ -21,7 +21,7 @@ namespace Chain_Of_Responsibility
         {
             var amount = currency.GetAmount();
 
-            if (amount >= _divider)
+            if (amount >= _divider && amount % 50 == 0)
             {
                 int num = (int)(amount / _divider);
                 double remainder = amount % _divider;

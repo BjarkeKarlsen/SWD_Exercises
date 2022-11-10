@@ -9,7 +9,7 @@ namespace Chain_Of_Responsibility
     public class BaseDispenser : IDispenseChain
     {
 
-        protected IDispenseChain? _chain;
+        protected IDispenseChain _chain;
 
 
         public void setNext(IDispenseChain next)
@@ -25,7 +25,7 @@ namespace Chain_Of_Responsibility
             }
             else if (currency.GetAmount() < 50)
             {
-                Console.WriteLine("Stop dispensing");
+                Console.WriteLine("Please take your money");
             }
             else
             {
