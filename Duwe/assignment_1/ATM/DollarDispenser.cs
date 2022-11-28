@@ -8,6 +8,11 @@ namespace ATM
 
         public DollarDispenser(int denomination)
         {
+            if (cur.GetAmount() % 50 != 0 )
+            {
+                Console.WriteLine("Amount must be divisible by 10");
+                return;
+            }
             _denomination = denomination;
         }
         public void SetNextChain(DispenseChain nextChain)
@@ -17,11 +22,7 @@ namespace ATM
 
         public void Dispense(Currency cur)
         {
-            if (cur.GetAmount() % 10 != 0 )
-            {
-                Console.WriteLine("Amount must be divisible by 10");
-                return;
-            }
+   
 
             if (cur.GetAmount() >= _denomination)
             {
