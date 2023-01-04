@@ -1,40 +1,39 @@
 @startuml
 
 Class Bill1000Dispenser{
-    IDispenseChain _nextChain
+   -  IDispenseChain _nextChain
 }
 Class Bill500Dispenser
 {
-    IDispenseChain _nextChain
+    - IDispenseChain _nextChain
 }
 Class Bill200Dispenser
 {
-    IDispenseChain _nextChain
+    - IDispenseChain _nextChain
 }
 Class Bill100Dispenser
 {
-    IDispenseChain _nextChain
+   - IDispenseChain _nextChain
 }
 Class Bill50Dispenser
 {
-    IDispenseChain _nextChain
+    - IDispenseChain _nextChain
 }
 
 interface IDispenseChain
 {
- SetNextChain(IDispenseChain) : void
- Dispense(Currency) : void
-
+ + SetNextChain(IDispenseChain) : void
+ + Dispense(Currency) : void
 }
 class ATM 
 {
-    Dispense(Currency): void
+    + Dispense(Currency): void
 }
 class Currency
 {
-    _amount : int
-    Currency(int) 
-    GetAmount() : int
+    - _amount : int
+    + Currency(int) 
+    + GetAmount() : int
 }
 
 Bill1000Dispenser .u.|> IDispenseChain

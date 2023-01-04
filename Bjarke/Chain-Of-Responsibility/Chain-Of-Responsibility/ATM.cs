@@ -13,8 +13,7 @@ namespace Chain_Of_Responsibility
         private IDispenseChain _chain3;
         private IDispenseChain _chain4;
         private IDispenseChain _chain5;
-        private IDispenseChain _chain6;
-        private IDispenseChain _chain7;
+
 
         public ATM()
         {

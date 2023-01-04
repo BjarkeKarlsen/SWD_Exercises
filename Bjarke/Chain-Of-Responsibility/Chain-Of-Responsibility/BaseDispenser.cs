@@ -19,11 +19,7 @@ namespace Chain_Of_Responsibility
 
         public virtual void Dispense(Currency currency)
         {
-            if (currency.GetAmount() % 50 != 0)
-            {
-                Console.WriteLine("Amount cannot be dispense");
-            }
-            else if (currency.GetAmount() < 50)
+            if (currency.GetAmount() < 50)
             {
                 Console.WriteLine("Please take your money");
             }

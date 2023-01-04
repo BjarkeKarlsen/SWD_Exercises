@@ -1,0 +1,17 @@
+@startuml C1
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Container.puml
+
+Person(user, "User", "A person who has an account in the system. The user is a someone who watch movies")
+System(flix, "VideoFlix", "A streaming service where you can watch movies")
+System_Ext(mail, "E-Mail System", "Sends mails with recommendation and billing " )
+System_Ext(payment,"Payment system","Handles billig of customers")
+
+
+Rel(user, flix, "Views training plans and diet plans, reports training data")
+Rel(flix, mail, "Send email using")
+Rel_Right(flix, payment, "Handles payments using")
+
+
+@enduml
