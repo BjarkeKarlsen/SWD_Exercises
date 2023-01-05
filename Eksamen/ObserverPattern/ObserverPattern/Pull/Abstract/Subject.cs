@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ObserverPattern.Pull.Abstract
 {
-    public class Subject
+    public abstract class Subject
     {
 
-        private List<IObserver> observers = new List<IObserver>();
+        protected List<IObserver> observers = new List<IObserver>();
         public void Attach(IObserver observer) {
             observers.Add(observer);
         }

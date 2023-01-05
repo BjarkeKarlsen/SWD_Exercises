@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace ObserverPattern.Pull.Abstract
 {
-    public abstract class ConcreteSubject : Subject
+    public class ConcreteSubject : Subject
     {
         private SubjectData _data = new SubjectData();
         public void ChangeSubjectValue(SubjectData data) {
