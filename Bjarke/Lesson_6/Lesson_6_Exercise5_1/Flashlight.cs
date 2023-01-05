@@ -73,7 +73,6 @@ namespace Lesson_6_Exercise5_1
                 case Mode.Flashing:
                     _currentMode = Mode.Solid;
                     Console.WriteLine("The flashligth is now flashing");
-
                     break;
                 default:
                     break;

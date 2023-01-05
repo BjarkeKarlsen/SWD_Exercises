@@ -14,6 +14,12 @@ namespace Lesson_6_Exercise2.Flashlight
             _state = new Off(this);
         }
 
+        //public void Power()
+        //{
+
+        //    _state.HandlePowerOn(this);
+        //}
+
         public void PowerOn()
         {
             _state.HandlePowerOn(this);
@@ -22,6 +28,11 @@ namespace Lesson_6_Exercise2.Flashlight
         public void PowerOff()
         {
             _state.HandlePowerOff(this);
+        }
+
+        public void Mode()
+        {
+            _state.HandleMode(this);
         }
 
         public void LightOn()
@@ -33,6 +44,17 @@ namespace Lesson_6_Exercise2.Flashlight
         {
             Console.WriteLine("Light is off");
         }
+
+        public void ModeSolid()
+        {
+            Console.WriteLine("Light is solid");
+        }
+
+        public void ModeFlash()
+        {
+            Console.WriteLine("Light is flasing");
+        }
+
 
         public void SetState(FlashlightState state)
         {

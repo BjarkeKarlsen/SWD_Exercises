@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace Lesson_6_Exercise2.Flashlight
 {
-    public class On : FlashlightState
+    public class Off : FlashlightState
     {
-        public On(Flashlight context)
+        public Off(Flashlight context)
         {
             context.SetState(this);
         }
 
-        public override void HandlePowerOn(Flashlight context)
+        public override void HandlePowerOff(Flashlight context)
         {
-            context.LightOn();
-            context.SetState(new Off(context));
+            context.LightOff();
+            context.SetState(new On(context));
         }
     }
 }

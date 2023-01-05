@@ -8,6 +8,7 @@ namespace Lesson_6_Exercise2.Flashlight
 {
     public abstract class FlashlightState
     {
+        //public readonly Flashlight _context = new();
 
         public virtual void HandlePowerOn(Flashlight context)
         {
@@ -16,5 +17,10 @@ namespace Lesson_6_Exercise2.Flashlight
         public virtual void HandlePowerOff(Flashlight context)
         {
         }
+
+        public virtual void HandleMode(Flashlight context)
+        {
+        }
+
     }
 }
