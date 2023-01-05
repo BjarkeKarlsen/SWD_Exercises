@@ -1,0 +1,67 @@
+@startuml
+!theme plain
+participant "<<Class>>\n main" as m
+participant "<<Class>>\n :Client" as c
+participant "<<Class>>\n :AbstractClass" as ac
+
+participant "<<Class>>\n :ConcreteClass1" as cc1
+participant "<<Class>>\n :ConcreteClass2" as cc2
+
+
+activate m
+m -> c : ClientCode(new ConcreteClass1())
+activate c
+c -> ac : TemplateMethod()
+deactivate c
+activate ac
+
+ac -> ac : BaseOperation1()
+ac -> cc1 : RequierdOperation1()
+activate cc1
+cc1 -->> ac : 
+deactivate cc1
+ac -> ac : Hook1()
+
+ac -> ac : BaseOperation2()
+ac -> cc1 : RequierdOperation2()
+activate cc1
+cc1 -->> ac :
+deactivate cc1
+ac -> ac : Hook2
+
+ac -->> c : 
+deactivate ac
+activate c
+c -->> m : 
+deactivate c
+
+m -> c : ClientCode(new ConcreteClass2())
+activate c
+c -> ac : TemplateMethod()
+deactivate c
+activate ac
+
+ac -> ac : BaseOperation1()
+ac -> cc2 : RequierdOperation1()
+activate cc2
+cc2 -->> ac : 
+deactivate cc2
+ac -> cc2 : Hook1()
+activate cc2
+cc2 -->> ac : 
+deactivate cc2
+
+ac -> ac : BaseOperation2()
+ac -> cc2 : RequierdOperation2()
+activate cc2
+cc2 -->> ac :
+deactivate cc2
+ac -> ac : Hook2
+
+ac -->> c : 
+deactivate ac
+activate c
+c -->> m : 
+deactivate c
+
+@enduml

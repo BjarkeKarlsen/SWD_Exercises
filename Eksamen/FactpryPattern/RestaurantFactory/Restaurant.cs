@@ -1,0 +1,13 @@
+﻿
+
+namespace FactoryPattern;
+    public class Client
+    {
+
+        public void ClientCode(SimpleBurgerFactory creator) 
+        {
+            Console.WriteLine("Client: I'm not aware of the creator's class," +
+                "but it still works.\n" + creator.SomeOperation());
+        }
+    }
+

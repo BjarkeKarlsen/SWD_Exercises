@@ -1,0 +1,34 @@
+@startuml
+!!theme plain
+
+participant "<<Class>>\n main" as m
+participant "<<Class>>\n :Context" as c
+
+participant "<<Class>>\n :StrategySort" as ss
+participant "<<Class>>\n :StrategyReverseSort" as srs
+
+activate m
+m -> c :  <<create>>
+activate c
+c -> ss :  <<create>>
+activate ss
+ss -->> c :  
+c -->> m : 
+
+m -> c : ExecuteStrategy(List<string>)
+c -> ss : Execute(List<String>)
+ss -->> c : List<string>
+c -->> m :
+
+deactivate ss
+
+c -> srs : <<create>>
+activate srs
+srs -->> c :  
+c -->> m : 
+
+m -> c : ExecuteStrategy(List<string>)
+c -> srs : Execute(List<String>)
+srs -->> c : List<string>
+c -->> m :
+@enduml
