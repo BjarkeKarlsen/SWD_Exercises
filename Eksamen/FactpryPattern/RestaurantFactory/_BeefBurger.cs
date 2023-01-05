@@ -1,6 +1,6 @@
 ﻿
 namespace FactoryPattern;
-    public class ConcreteProduct1 : IBruger
+    public class _BeefBurger : Burger
     {
         public string Operation() 
         {

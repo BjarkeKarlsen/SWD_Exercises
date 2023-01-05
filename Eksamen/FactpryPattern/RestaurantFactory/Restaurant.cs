@@ -1,13 +1,18 @@
 ﻿
 
 namespace FactoryPattern;
-    public class Client
+    public class Restaurant
     {
-
-        public void ClientCode(SimpleBurgerFactory creator) 
-        {
-            Console.WriteLine("Client: I'm not aware of the creator's class," +
-                "but it still works.\n" + creator.SomeOperation());
+        public Burger orderBurger(string request) {
+        Burger burger = null;
+        if ("BEEF".Equals(request)) {
+            burger = new BeefBurger();
         }
+        else if ("VEGGIE".Equals(request)) {
+            burger = new VeggieBurger();
+        }
+        burger.Prepare();
+        return burger;
+    }
     }
 

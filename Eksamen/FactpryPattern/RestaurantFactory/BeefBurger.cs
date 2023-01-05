@@ -1,8 +1,8 @@
 ﻿namespace FactoryPattern;
-    public class ConcreteCreator2 : SimpleBurgerFactory
+    public class BeefBurger : Burger
     {
-        public override IBruger FactoryMethod() 
+        public override void Prepare() 
         {
-            return new VeggieBurger();
+            Console.WriteLine("Prepare beef burger");
         }
     }

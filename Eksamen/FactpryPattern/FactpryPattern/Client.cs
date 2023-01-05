@@ -7,7 +7,7 @@ namespace FactoryPattern;
         public void ClientCode(Creator creator) 
         {
             Console.WriteLine("Client: I'm not aware of the creator's class," +
-                "but it still works.\n" + creator.SomeOperation());
+                "but it still works.\n" + creator.Operation1());
         }
     }
 

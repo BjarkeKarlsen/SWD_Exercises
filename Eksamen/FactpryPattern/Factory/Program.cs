@@ -1,6 +1,6 @@
 ﻿using FactoryPattern;
 
-var client = new Client;
+var client = new Client();
 Console.WriteLine("App: Launched with the ConcreteCreator1.");
 client.ClientCode(new ConcreteCreator1());
 
