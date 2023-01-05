@@ -1,5 +1,5 @@
 @startuml
-!!theme plain
+!theme plain
 
 participant "<<Class>>\n main" as m
 participant "<<Class>>\n :Context" as c
@@ -8,8 +8,10 @@ participant "<<Class>>\n :StrategySort" as ss
 participant "<<Class>>\n :StrategyReverseSort" as srs
 
 activate m
+
 m -> c :  <<create>>
 activate c
+m -> c :  setStrategy(<IStrategy>)
 c -> ss :  <<create>>
 activate ss
 ss -->> c :  
@@ -21,8 +23,10 @@ ss -->> c : List<string>
 c -->> m :
 
 deactivate ss
+m -> c :  setStrategy(<IStrategy>)
 
 c -> srs : <<create>>
+
 activate srs
 srs -->> c :  
 c -->> m : 

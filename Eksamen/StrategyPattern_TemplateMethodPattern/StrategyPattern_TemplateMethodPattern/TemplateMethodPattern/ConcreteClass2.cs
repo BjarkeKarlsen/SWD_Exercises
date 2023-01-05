@@ -18,6 +18,7 @@ namespace StrategyPattern_TemplateMethodPattern.TemplateMethodPattern
 
         protected override void Hook1() {
             Console.WriteLine("ConcreteClass2 says: Overriden Hook1");
+            useHook1 = false;
         }
     }
 }

@@ -8,14 +8,17 @@ namespace StrategyPattern_TemplateMethodPattern.TemplateMethodPattern
 {
     public abstract class AbstractClass
     {
-
+        protected  bool useHook1 { get; set; }
         // The template method defines the skeleton of an algorithm.
         public void TemplateMethod() {
             this.BaseOperation1();
             this.RequiredOperation1();
             this.Hook1();
             this.BaseOperation2();
-            this.RequiredOperation2();
+            if (useHook1)
+            {
+                this.RequiredOperation2();
+            }
             this.Hook2();
         }
 
@@ -37,7 +40,11 @@ namespace StrategyPattern_TemplateMethodPattern.TemplateMethodPattern
         // mandatory since the hooks already have default (but empty)
         // implementation. Hooks provide additional extension points in some
         // crucial places of the algorithm.
-        protected virtual void Hook1() { }
+        protected virtual void Hook1()
+        {
+            useHook1 = true;
+        }
+
         protected virtual void Hook2() { }
 
     }
