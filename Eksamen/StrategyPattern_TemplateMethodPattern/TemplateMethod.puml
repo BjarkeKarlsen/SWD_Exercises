@@ -23,10 +23,12 @@ deactivate cc1
 ac -> ac : Hook1()
 
 ac -> ac : BaseOperation2()
-ac -> cc1 : RequierdOperation2()
-activate cc1
-cc1 -->> ac :
-deactivate cc1
+alt Hook1 returns true
+ac -> cc2 : RequierdOperation2()
+activate cc2
+cc2 -->> ac :
+deactivate cc2
+end
 ac -> ac : Hook2
 
 ac -->> c : 
@@ -52,10 +54,12 @@ cc2 -->> ac :
 deactivate cc2
 
 ac -> ac : BaseOperation2()
+alt Hook1 returns true
 ac -> cc2 : RequierdOperation2()
 activate cc2
 cc2 -->> ac :
 deactivate cc2
+end
 ac -> ac : Hook2
 
 ac -->> c : 
