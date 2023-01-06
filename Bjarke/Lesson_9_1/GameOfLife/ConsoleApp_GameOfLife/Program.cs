@@ -16,20 +16,20 @@ namespace ConsoleApp_GameOfLife
 
             gameOfLife = new SequentialGameOfLife(gridSize);
             stopwatch.Start();
-            gameOfLife.Run(100);
+            gameOfLife.Run(1000);
             stopwatch.Stop();
             Console.WriteLine("Sequnential: " + stopwatch.ElapsedMilliseconds);
 
             gameOfLife = new ParallelGameOfLife(gridSize);
             stopwatch.Restart();
-            gameOfLife.Run(100);
+            gameOfLife.Run(1000);
             stopwatch.Stop();
             Console.WriteLine("Parrallel: " + stopwatch.ElapsedMilliseconds);
 
 
             gameOfLife = new ParallelGameOfLifeWithBarrier(gridSize);
             stopwatch.Restart();
-            gameOfLife.Run(100);
+            gameOfLife.Run(1000);
             stopwatch.Stop();
             Console.WriteLine("Parallel with barrier: " + stopwatch.ElapsedMilliseconds);
 

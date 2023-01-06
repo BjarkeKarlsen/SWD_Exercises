@@ -11,8 +11,13 @@ public class ConcreteCreator1 : Creator
     // type, even though the concrete product is actually returned from the
     // method. This way the Creator can stay independent of concrete product
     // classes.
-    public override IProduct FactoryMethod()
+    public override IProductA CreateProductA()
     {
-        return new ConcreteProduct1();
+        return new ConcreteProductA1();
+    }
+
+    public override IProductB CreateProductB()
+    {
+        return new ConcreteProductB1();
     }
 }

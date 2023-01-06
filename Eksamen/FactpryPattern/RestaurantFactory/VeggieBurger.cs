@@ -1,14 +1,23 @@
-﻿using FactpryPattern;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace FactoryPattern;
+public class VeggieBurger : Burger
+{
+    bool Combo { get; set; }
 
-namespace FactoryPattern;
-    public class VeggieBurger : Burger
+    public VeggieBurger()
     {
-    public override void Prepare() {
-        Console.WriteLine("Prepare veggie burger");
+        Combo = false;
+    }
+
+    public override void Prepare()
+    {
+        if (Combo)
+        {
+            Console.WriteLine("Prepare veggie burger");
+        }
+        else
+        {
+            Console.WriteLine("Prepare combo veggie burger");
+        }
+
     }
 }

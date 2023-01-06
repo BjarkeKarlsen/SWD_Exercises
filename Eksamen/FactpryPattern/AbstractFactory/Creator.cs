@@ -6,7 +6,9 @@ public abstract class Creator
 
     // Note that the Creator may also provide some default implementation of
     // the factory method.
-    public abstract IProduct FactoryMethod();
+    public abstract IProductA CreateProductA();
+    public abstract IProductB CreateProductB();
+
 
 
     // Also note that, despite its name, the Creator's primary
@@ -19,10 +21,11 @@ public abstract class Creator
     public string Operation()
     {
         // Call the factory method to create a Product object.
-        var product = FactoryMethod();
+        var productA = CreateProductA();
+        var productB = CreateProductB();
         // Now, use the product.
         var result = "Creator: The same creator's code has just worked with "
-            + product.Operation();
+            + productA.Operation() + productB.Operation();
 
         return result;
     }
